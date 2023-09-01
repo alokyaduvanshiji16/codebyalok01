@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function imgone()
+        {
+            im.src="1.png";
+        }
+        function imgtwo()
+        {
+            im.src="2.png";
+        }
+
+        function changebg()
+        {
+            document.bgColor="red";
+        }
+        function changefg()
+        {
+            document.fgColor="yellow";
+        }
+
+        function check()
+        {
+            let name=prompt("ENTER YOUR NAME");
+            let res=confirm(name+"Are you genious??");
+            if(res==true)
+            alert("thank you for accepting the reality");
+        else
+        alert("No,You ar genious");
+        }
+        
+        </script>
+    </head>
+    <body>
+        <img src="2.png" width="500px" name="im" onmouseover="imgtwo()" onmouseout="imgone()"/>
+
+        <h>CLICK BELOW BUTTOM TO SEE THE MAGIC</h>
+        <form name="f1">
+            <input type="button" value="change backgrond color" name="b1" onclick="changebg()"/>
+            <input type="button" value="change font color" name="b2" onclick="changefg()"/>
+
+            <BR>
+                <HR>
+<h1> CHECK YOUR PERSONALITY</h1>
+<form name="f1">
+    <input type="button" value="click for check" name="b1" onclick="check()"/>
+</form>
+
+        </form>
+    </body>
+</html>
